@@ -83,7 +83,6 @@ return [
     'schemas'         => [
         'default' => [
             'query'      => [
-                'users'    => 'App\GraphQL\Query\UsersQuery',
                 'upcoming' => 'App\GraphQL\Query\UpcomingQuery',
             ],
             'mutation'   => [
@@ -103,8 +102,6 @@ return [
     // ]
     //
     'types'           => [
-        'user'  => 'App\GraphQL\Type\UserType',
-        'liga'  => 'App\GraphQL\Type\LigaType',
         'match' => 'App\GraphQL\Type\MatchType',
         'team'  => 'App\GraphQL\Type\TeamType',
         'group' => 'App\GraphQL\Type\GroupType',
