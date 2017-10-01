@@ -84,6 +84,7 @@ return [
         'default' => [
             'query'      => [
                 'upcoming' => 'App\GraphQL\Query\UpcomingQuery',
+                'matches' => 'App\GraphQL\Query\MatchesQuery',
             ],
             'mutation'   => [
                 //'example_mutation'  => ExampleMutation::class,
