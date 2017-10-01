@@ -27,9 +27,14 @@ class BundesLigaHttp
         return GuzzleHttp\json_decode($this->request($method, $path)->getBody()->getContents());
     }
 
+    public function getAllMatches()
+    {
+        return $this->unwrappedRequestBody("GET", "getmatchdata/bl1/2017");
+    }
+
     public function getUpcomingMatches()
     {
-        return array_filter($this->unwrappedRequestBody("GET", "getmatchdata/bl1/2017")
+        return array_filter($this->getAllMatches()
             , function ($match)
             {
                 $carbon = Carbon::parse($match->MatchDateTimeUTC, 'UTC');
