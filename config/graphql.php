@@ -85,6 +85,7 @@ return [
             'query'      => [
                 'upcoming' => 'App\GraphQL\Query\UpcomingQuery',
                 'matches' => 'App\GraphQL\Query\MatchesQuery',
+                'teams' => 'App\GraphQL\Query\TeamQuery',
             ],
             'mutation'   => [
                 //'example_mutation'  => ExampleMutation::class,
@@ -106,6 +107,7 @@ return [
         'match' => 'App\GraphQL\Type\MatchType',
         'team'  => 'App\GraphQL\Type\TeamType',
         'group' => 'App\GraphQL\Type\GroupType',
+        'team_ratio' => 'App\GraphQL\Type\TeamRatioType',
         //'relation_example'  => ExampleRelationType::class,
     ],
 
