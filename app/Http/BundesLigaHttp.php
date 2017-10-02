@@ -74,8 +74,8 @@ class BundesLigaHttp
             'TotalGames'  => $team->TotalGames + 1,
         ];
 
-        $updated->WinRation  = $updated->Win / $updated->TotalGames * 100;
-        $updated->LossRation = $updated->Loss / $updated->TotalGames * 100;
+        $updated->WinRatio  = $updated->Win / $updated->TotalGames * 100;
+        $updated->LossRatio = $updated->Loss / $updated->TotalGames * 100;
 
         return $updated;
     }

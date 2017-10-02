@@ -33,10 +33,10 @@ class TeamRatioType extends GraphQLType
             'TotalGames'          => [
                 'type' => Type::int(),
             ],
-            'WinRation'           => [
+            'WinRatio'           => [
                 'type' => Type::float(),
             ],
-            'LossRation'          => [
+            'LossRatio'          => [
                 'type' => Type::float(),
             ],
         ];
