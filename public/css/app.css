@@ -8350,3 +8350,8 @@ button.close {
   }
 }
 
+.thumbnail.team {
+  padding: 10px;
+  text-align: center;
+}
+
