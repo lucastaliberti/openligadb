@@ -18,22 +18,25 @@ class TeamRatioType extends GraphQLType
     public function fields()
     {
         return [
-            'TeamName'   => [
+            'TeamName'            => [
                 'type' => Type::string(),
             ],
-            'Win'        => [
+            'TeamIconUrl' => [
+                'type' => Type::string(),
+            ],
+            'Win'                 => [
                 'type' => Type::int(),
             ],
-            'Loss'       => [
+            'Loss'                => [
                 'type' => Type::int(),
             ],
-            'TotalGames' => [
+            'TotalGames'          => [
                 'type' => Type::int(),
             ],
-            'WinRation'  => [
+            'WinRation'           => [
                 'type' => Type::float(),
             ],
-            'LossRation' => [
+            'LossRation'          => [
                 'type' => Type::float(),
             ],
         ];
